@@ -11,7 +11,7 @@ describe('root', () => {
             .get('/')
             .expect(200)
             .then((res) => {
-                expect(res.text).toContain('Welcome to Express!!!');
+                expect(res.text).toContain('This is the test of my CI/CD pipeline.');
                 done();
             }).catch(err => done(err));;
     });
