@@ -11,7 +11,7 @@ describe('root', () => {
             .get('/')
             .expect(200)
             .then((res) => {
-                expect(res.text).toContain('This is the test of my CI/CD pipeline.');
+                expect(res.text).toContain('This is the test of my CI/CD pipeline.I hope this does not give me an error.');
                 done();
             }).catch(err => done(err));;
     });
